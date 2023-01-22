@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        Double principal=sc.nextDouble();
+        Double interest=sc.nextDouble();
+        Double year=sc.nextDouble();
+        Double no=sc.nextDouble();
+        // Double ci=principal(1+(interest/no)**(no*year));
+        Double ci=principal * (Math.pow((1 + interest/100), (year * no))) - principal;
+        if (principal<0 || interest<0 || year<0 || no<0){
+            System.out.println("0.0");
+        }
+        else{
+            System.out.println(ci);
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
