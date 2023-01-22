@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        char operator = sc.next().charAt(0);
+        int sum =  a + b;
+        int mul = a * b ;
+        int sub = a-b;
+        int divide = a/b;
+        int modulo=a%b;
+        if(operator =='+'){
+            System.out.println(sum);
+        }
+        else if(operator=='-'){
+            System.out.println(sub);
+        }
+        else if(operator=='*'){
+            System.out.println(mul);
+        }
+        else if(operator=='/'){
+            System.out.println(divide);
+            
+        }
+        else if(operator=='%'){
+            System.out.println(modulo);
+        }
+        else{
+            System.out.println("Invalid arithmetic operators");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
