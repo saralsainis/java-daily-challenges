@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc= new Scanner(System.in); 
+        
+        long a= sc.nextLong();
+        String s=sc.nextLine();
+        s+=sc.nextLine();
+         
+        
+        char b= sc.next().charAt(0); 
+        int c=sc.nextInt();
+        int d=20000-c;
+        String f="Ms.";
+        String m="Mr.";
+        char Male='M';
+        char Female='F';
+        if (c>20000 && Character.compare(b,Female)==0){
+            System.out.println("Hi "+f+" "+s+"!");
+            System.out.println("Insufficient Funds! You can not withdraw "+c+".");
+                
+        }
+        if (c>20000 && Character.compare(b,Male)==0){
+            System.out.println("Hi "+m+" "+s+"!");
+            System.out.println("Insufficient Funds! You can not withdraw "+c+".");
+        
+        }
+        
+        if (c<=20000 && Character.compare(b,Male)==0){
+            System.out.println("Hi "+m+" "+s+"!");
+            System.out.println("Your Account Balance after withdrawl is "+d+".");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+        if (c<=20000 && Character.compare(b,Female)==0){
+            System.out.println("Hi "+f+" "+s+"!");
+            System.out.println("Your Account Balance after withdrawl is "+d+".");
+       
+        }
+    }
+}
