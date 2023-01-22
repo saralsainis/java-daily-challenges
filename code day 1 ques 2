@@ -1,0 +1,49 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+      Scanner obj = new Scanner(System.in);  
+      Double a=obj.nextDouble();
+      Double b=obj.nextDouble();
+    String go="Gold";
+        String si="Silver";
+      
+        Double g=10.0;
+  
+        
+       
+        
+     
+      
+    String s=obj.next();
+        
+     Double c= obj.nextDouble();
+    Double l=(b/g)*c;
+        Double ca=(a/1000)*c;
+        
+        if (c<0.01 || c>1000){
+            System.out.println("Invalid Input");
+        }
+ else if (s.equals(go)){
+            
+            System.out.println(l.intValue());
+            
+            
+        }
+        else if (s.equals(si)){
+            
+            System.out.println(ca.intValue());
+       
+        }
+        
+
+ 
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
