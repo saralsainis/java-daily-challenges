@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int a=sc.nextInt();
+        int b;
+        int c;
+        if (a>9 & a<100){
+            b=a%10;
+            c=a/10;
+            if (((b+c)+(b*c))==a){
+                System.out.println("special two digit number");
+            } 
+            else {
+            System.out.println("not a special two digit number");
+        }
+            
+            
+        }
+        else if( a>99 || a<10){
+            System.out.println("invalid input");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
