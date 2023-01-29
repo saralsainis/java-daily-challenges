@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int p=(a+((a*18)/100));
+        float n=(float)(a);
+        float price=(n+((n*18)/100));
+        if (a<=450){
+            System.out.println("Invalid Input");
+            
+            
+        }
+        else if(p==price) {
+            
+        
+        System.out.println(p);
+        }
+        else {
+            System.out.println(price);
+            
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
