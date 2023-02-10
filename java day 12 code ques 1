@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        char b=sc.next().charAt(0);
+        int ascii = a;
+        int ascii2 = b;
+        if (ascii<ascii2 & Character.isAlphabetic(a) & Character.isAlphabetic(b)){
+        for ( int i=ascii ; i<=ascii2;i++){
+            System.out.print((char)(i)+" ");
+        }
+        }
+        
+        else{
+            System.out.println("ERROR");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
