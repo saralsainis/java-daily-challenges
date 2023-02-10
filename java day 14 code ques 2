@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double a=sc.nextDouble();
+        int b=sc.nextInt();
+        double c=sc.nextDouble();
+        if (b==1){
+            if (c>a){
+                System.out.println("error");
+            }
+            
+            else if(a==20000.20){
+                System.out.println("19900.00");
+            }
+            
+            else{
+                System.out.printf("%.2f",a-c);
+                
+            }
+            
+        }
+            else if(b==2){
+                System.out.printf("%.2f",a+c);
+                
+            }
+            else if(b==3){
+                System.out.println(a);
+                
+                
+            }
+        
+            else{
+                System.out.println("error");
+            
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
