@@ -1,0 +1,15 @@
+import java.text.*;
+import java.util.*;
+
+class Solution {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    double a=sc.nextDouble();
+    double b=(double)(a+(a*0.1));
+    double c=(double)(b/12);
+
+    DecimalFormat decimalFormat = new DecimalFormat("#.##");
+    System.out.println(decimalFormat.format(b));
+    System.out.println(decimalFormat.format(c));
+  }
+}
