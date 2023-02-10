@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int r,sum=0,temp;  
+        int n=sc.nextInt();
+        
+        temp=n; 
+        if (n<9 || n>9999){
+            System.out.println("invalid input"); 
+            
+            
+        }
+        else{
+         
+  while(n>0){    
+   r=n%10;  //getting remainder  
+   sum=(sum*10)+r;    
+   n=n/10;    
+  }    
+  if(temp==sum)    
+   System.out.println("number is palindrome");    
+  else    
+   System.out.println("number is not palindrome");    
+        
+    }  
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
