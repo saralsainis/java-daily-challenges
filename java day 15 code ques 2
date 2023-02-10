@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        long a=sc.nextLong();
+        String str1 = Long.toString(a);
+        if (a<1 || a>2147483647){
+            System.out.println("Invalid Number");
+            
+        }
+        else{
+            System.out.println(str1.length());
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
