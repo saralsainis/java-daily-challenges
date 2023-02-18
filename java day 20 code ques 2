@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if (a<0){
+            System.out.println("Invalid Array Size");
+        }
+        
+        else{
+        int sum=0;
+        int sum1=0;
+        double arr[]=new double[a+1];
+        for (int i=0;i<a;i++){
+            arr[i]=sc.nextDouble();
+            
+        }
+        for (int i=0;i<a;i++){
+            sum+=Math.abs(arr[i]);
+            sum1+=arr[i];
+            
+            }
+        
+        
+        if (sum1!=sum){
+                System.out.println("Invalid Array Elements");
+            
+            
+        }
+            
+            else{
+                for (int i=0;i<a;i++){
+                System.out.println((int)arr[i]);
+            }
+            }
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
