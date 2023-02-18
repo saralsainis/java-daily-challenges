@@ -1,0 +1,55 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            double arr[]=new double[4];
+            for(int i=0;i<n;i++){
+                
+           
+            for(int j=0;j<3;j++){
+                arr[j]=sc.nextDouble();            }
+                
+                
+                if ((arr[0]>arr[1]  & arr[1]>arr[2])){
+                    System.out.print((arr[0]+arr[1])/2+" ");
+                }
+                
+                
+                if ((arr[1]>arr[2] & arr[2]>arr[0])){
+                    System.out.print((arr[1]+arr[2])/2+" ");
+                }
+                    
+                if ((arr[0]>arr[2] & arr[2]>arr[1])){
+                    System.out.print((arr[0]+arr[2])/2+" ");
+                }
+                    
+                if ((arr[1]>arr[0] & arr[0]>arr[2])){
+                    System.out.print((arr[1]+arr[0])/2+" ");
+                }
+                    
+                if ((arr[2]>arr[1] & arr[1]>arr[0])){
+                    System.out.print((arr[1]+arr[2])/2+" ");
+                }
+                    
+                if ((arr[2]>arr[0] & arr[0]>arr[1])){
+                    System.out.print((arr[0]+arr[2])/2 +" ");
+                }
+                    
+                
+                
+                
+   
+        }
+        
+        
+          
+            
+        }
+  
+    
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    } 
