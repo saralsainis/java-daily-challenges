@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        if (a.equals("Monday")|| a.equals("Tuesday")||a.equals("Friday")){
+            System.out.println("8:30"+" "+"5:30");
+            
+        }
+        else if(a.equals("Saturday")){
+            System.out.println("9:30"+" "+"4:30");
+            
+            
+        }
+        else{
+            System.out.println("Library is closed");
+            
+        }
+            /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
